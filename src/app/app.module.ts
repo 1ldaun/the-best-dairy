@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { StartPageComponent } from './start-page/start-page.component'
 import { WelcomeBlockComponent } from './start-page/welcome-block/welcome-block.component'
-import { LoginPageComponent } from './start-page/login-page/login-page.component'
+import { LoginPageComponent } from './login-page/login-page.component'
 
 @NgModule({
   declarations: [
