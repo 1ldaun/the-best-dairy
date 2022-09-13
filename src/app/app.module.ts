@@ -6,16 +6,19 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { StartPageComponent } from './start-page/start-page.component'
 import { WelcomeBlockComponent } from './start-page/welcome-block/welcome-block.component'
-import { LoginPageComponent } from './login-page/login-page.component'
+import { LoginFormModule } from './login-page/login-form/login-form.module'
+import { LoginPageModule } from './login-page/login-page.module'
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    StartPageComponent,
-    WelcomeBlockComponent,
-    LoginPageComponent
+  declarations: [AppComponent, StartPageComponent, WelcomeBlockComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    TuiRootModule,
+    TuiButtonModule,
+    LoginFormModule,
+    LoginPageModule
   ],
-  imports: [BrowserModule, AppRoutingModule, TuiRootModule, TuiButtonModule],
   providers: [],
   bootstrap: [AppComponent]
 })

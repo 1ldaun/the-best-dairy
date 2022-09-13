@@ -1,0 +1,13 @@
+<form [formGroup]="inputForm" class="login-form">
+  <tui-input formControlName="loginValue"> Login </tui-input>
+  <tui-input-password formControlName="passwordValue"
+    >Password</tui-input-password
+  >
+  <button
+    tuiButton
+    size="m"
+    type="submit"
+    class="tui-form__button login-button">
+    Submit
+  </button>
+</form>
